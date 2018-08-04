@@ -3,8 +3,7 @@ MAINTAINER sameer@damagehead.com
 
 ENV BIND_USER=bind \
     BIND_VERSION=1:9.10.3 \
-    WEBMIN_VERSION=1.8 \
-    DATA_DIR=/data
+    WEBMIN_VERSION=1.8
 
 RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
  && wget http://www.webmin.com/jcameron-key.asc -qO - | apt-key add - \
